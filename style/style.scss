@@ -1,0 +1,70 @@
+$font_family_1: sans-serif;
+$background_color_1: lightgrey;
+
+/* 1 column: 360px */
+/* 2 columns: 720 */
+/* 3 columns: 768px */
+/* 4 columns: 992px and up */
+body {
+	font-family: $font_family_1;
+	font-size: .9rem;
+}
+h1 {
+	text-align: center;
+}
+.autowide {
+	margin: 0 auto;
+	width: 98%;
+	img {
+		float: left;
+		margin: 0 .75rem 0 0;
+	}
+	.col {
+		background-color: $background_color_1;
+		border-radius: .25rem;
+		margin-bottom: 1rem;
+		p {
+			padding: .25rem .75rem;
+		}
+	}
+}
+@media only screen and (min-width: 720px) {
+	.autowide {
+		.col {
+			float: left;
+			margin-right: 2.564102564102564%;
+			width: 48.717948717948715%;
+		}
+		.module {
+			&:nth-child(2n&+0) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 768px) {
+	.autowide {
+		.col {
+			width: 31.623931623931625%;
+			&:nth-child(2n&+0) {
+				margin-right: 2.564102564102564%;
+			}
+			&:nth-child(3n&+0) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 992px) {
+	.autowide {
+		.col {
+			width: 23.076923076923077%;
+			&:nth-child(3n&+0) {
+				margin-right: 2.564102564102564%;
+			}
+			&:nth-child(4n&+0) {
+				margin-right: 0;
+			}
+		}
+	}
+}
