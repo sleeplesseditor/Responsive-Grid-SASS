@@ -7,12 +7,6 @@ h1 {
   text-align: center;
 }
 
-/* 1 column: 360px */
-.autowide {
-  margin: 0 auto;
-	width: 100%;
-}
-
 /* Background for columns*/
 .autowide .col {
   background-color: #d3d3d3;
@@ -22,6 +16,12 @@ h1 {
 
 .autowide .col p {
   padding: .25rem .75rem;
+}
+
+/* 1 column: 360px */
+.autowide {
+  margin: 0 auto;
+	width: 100%;
 }
 
 /* 2 columns: 720 */
